@@ -17,6 +17,15 @@ class Ec1 extends StatelessWidget {
         ],
       ),
       body: Center(child: Text('Chapter 6 Exercise 1')),
+        bottomNavigationBar: BottomAppBar(child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(icon: Icon(Icons.home), onPressed: () {}),
+            IconButton(icon: Icon(Icons.add_a_photo), onPressed: () {}),
+            IconButton(icon: Icon(Icons.person), onPressed: () {}),
+            IconButton(onPressed: () {}, icon: Icon(Icons.message)),
+          ],
+        ),)
     );
   }
 }
