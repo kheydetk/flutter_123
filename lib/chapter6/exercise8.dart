@@ -13,7 +13,12 @@ class Exercise8 extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Text("Hello flutter", style: TextStyle(fontSize: 20)),
+      body: SafeArea(
+        child: Text(
+          "Safe Area",
+          style: TextStyle(fontFamily: "Jersey10", fontSize: 30),
+        ),
+      ),
     );
   }
 }
