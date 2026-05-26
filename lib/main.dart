@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/chapter6/exercise8.dart';
+import 'chapter6/exercise6.dart';
 import 'chapter6/exercise1.dart';
 import 'chapter6/exercise2.dart';
 import 'chapter6/exercise3.dart';
+import 'chapter6/exercise4.dart';
+import 'chapter6/exercise7.dart';
+import 'chapter6/mizu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,6 +57,51 @@ class Homepage extends StatelessWidget {
               );
             },
             child: Text('Go to Chapter 6 Exercise 3'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Exercise4()),
+              );
+            },
+            child: Text('Go to Chapter 6 Exercise 4'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Exercise6()),
+              );
+            },
+            child: Text('Go to Chapter 6 Exercise 6'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Exercise7()),
+              );
+            },
+            child: Text("Go to Chapter 6 Exercise 7"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Exercise8()),
+              );
+            },
+            child: Text("Go to Chapter 6 Exercise 8"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Mizu()),
+              );
+            },
+            child: Text("My main"),
           ),
         ],
       ),
